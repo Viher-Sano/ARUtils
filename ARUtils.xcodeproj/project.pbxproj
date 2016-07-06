@@ -92,6 +92,7 @@
 		87D278D61D2D03E300E85217 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = AR;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Alexander Rudyk";
 				TargetAttributes = {

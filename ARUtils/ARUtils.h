@@ -26,10 +26,31 @@ typedef enum {
 
 #pragma mark - Alert
 
+/*!
+ * @discussion This method creates alert accordance with the chosen style.
+ * @param style Style alert you selected from AlertStyle.
+ * @param message At NSString by message you want to display to the user.
+ * @return UIAlertController that you customized.
+ */
+
 - (UIAlertController*) showAlertWithStule:(AlertStyle) style andMessage:(NSString*) message;
+
+/*!
+ * @discussion This method creates alert accordance with the chosen style.
+ * @param style Style alert you selected from AlertStyle.
+ * @return UIAlertController that you customized.
+ */
+
 - (UIAlertController*) showStopAlertWithMessage:(NSString*) message;
 
 #pragma mark - String
+
+/*!
+ * @discussion This method converts panels in NSString.
+ * @warning The array must contain only NSString.
+ * @param array At NSArray by the array you want to convert.
+ * @return NSString what was created from an array.
+ */
 
 - (NSString*) stringWithArray:(NSArray*) array;
 - (NSString*) stringWithDate:(NSDate*) date andFormate:(DateFormate) formate;

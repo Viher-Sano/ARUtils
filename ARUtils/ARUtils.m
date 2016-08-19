@@ -26,13 +26,13 @@
 - (UIAlertController*) showAlertWithStule:(AlertStyle) style andMessage:(NSString*) message {
     NSString * title = @"";
     switch (style) {
-        case 0:
+        case AlertStyleError:
             title = @"Error";
             break;
-        case 1:
+        case AlertStyleInfo:
             title = @"Info";
             break;
-        case 2:
+        case AlertStyleWarning:
             title = @"Warning";
             break;
     }
@@ -76,10 +76,10 @@
     NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
     
     switch (formate) {
-        case 0: // <-- user formate
+        case DateFormateUser: // <-- user formate
             [dateFormatter setDateFormat:@"dd MMM yyyy HH:mm"];
             break;
-        case 1: // <-- server formate
+        case DateFormateServer: // <-- server formate
             [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
             break;
     }
